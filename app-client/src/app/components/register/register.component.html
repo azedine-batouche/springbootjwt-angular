@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="card card-container">
+        <img src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" id="profile-img" class="profile-img-card">
+        <form name="form-signin" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
+            <div class="alert alert-danger" role="alert" *ngIf="errorMessage">
+                {{errorMessage}}
+            </div>
+            <div class="form-group" [ngClass]="{'has-error': f.submitted && !name.valid}">
+                <label for="name">Full name</label>
+                <input type="text" name="name" id="name" class="from-control input-text-custom" [(ngModel)]="user.name" #name="ngModel" required />
+            </div>
+            <div class="alert alert-danger" *ngIf="f.submitted && !name.valid">
+                Full name is required !
+            </div>
+            <div class="form-group" [ngClass]="{'has-error': f.submitted && !username.valid}">
+                <label for="username">username</label>
+                <input type="text" name="username" id="username" class="from-control input-text-custom" [(ngModel)]="user.username" #username="ngModel" required />
+            </div>
+            <div class="alert alert-danger" *ngIf="f.submitted && !username.valid">
+                A valid username is required !
+            </div>
+            <div class="form-group" [ngClass]="{'has-error': f.submitted && !password.valid}">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" class="from-control input-text-custom" [(ngModel)]="user.password" #password="ngModel" required />
+            </div>
+            <div class="alert alert-danger" *ngIf="f.submitted && !password.valid">
+                A valid password is required !
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block btn-signin form-submit-button">Sign In</button>
+        </form>
+        <a [routerLink]="['/login']" class="btn btn-link">I have a Account !</a>
+    </div>
+</div>
