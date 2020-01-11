@@ -1,9 +1,11 @@
 # springbootjwt-angular
 
-##Stack
-[Angular](https://angular.io/cli)[Springboot](https://spring.io/guides/gs/spring-boot/)
+Stack
+---
+[Angular](https://angular.io/cli), [Springboot](https://spring.io/guides/gs/spring-boot/)
 
-#How to use this code?
+How to use this code?
+---
 
 ## I. app-server
 
