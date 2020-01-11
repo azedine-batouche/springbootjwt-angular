@@ -1,13 +1,12 @@
 # springbootjwt-angular
-===
-#Stack
-===
 
+##Stack
+[Angular](https://angular.io/cli)[Springboot](https://spring.io/guides/gs/spring-boot/)
 
 #How to use this code?
-===
+
 ## I. app-server
-===
+
 1. Make sure you have database, java 1.8 
 2. Clone this repository
 ```
@@ -31,9 +30,9 @@ spring.datasource.password=username
 BASE_URL = 'http://localhost:8080/api/
 ```
 8. you can postman or others for your test.
-===
+
 ## II. app-client
-===
+
 1. Navigate into the folder app-client
 ```
 cd app-client
